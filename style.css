@@ -1,0 +1,186 @@
+.header{
+  width: 100vw;
+  height: 100px;
+  display: block;
+  background-color: #2F3E5C;
+}
+
+.inner_header{
+  width: 1000px; /* This is the inner width of the content inside of your header (80%, etc) */
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: #2F3E5C;
+}
+
+.logo_container{
+  display: table;
+  height: 100%;
+  float: left;
+  margin-left: 20px;
+}
+.logo_container img{
+  margin-top: 20px;
+}
+
+.logo_container h1{
+color: white;
+height: 100%;
+display: table-cell;
+vertical-align: middle;
+font-family: 'Montserrat';
+font-size: 36px;
+font-weight: 500;
+}
+
+.logo_container h1 span{
+  font-weight: 800;
+}
+
+.navigation{
+  float: right;
+  height: 75%;
+}
+
+.navigation a{
+  display: table;
+  height: 100%;
+  float: left;
+  padding: 0px 20px;
+}
+
+.navigation a li{
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+	
+* {
+	box-sizing: border-box
+}
+
+.mySlides {
+	display: none;
+  height: 35%;
+}
+
+.slideshow-container {
+	width: 1000px;
+	position: relative;
+  top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+	background-color: #717171;
+}
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 2s;
+	animation-name: fade;
+	animation-duration: 2s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+.general-text {
+  font-family: 'montserrat'
+}
+
+.general-text h1, h2, h3 {
+  text-align: center;
+  font-family: 'montserrat';
+}
+
+.general-text p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+  
+  .div1 { grid-area: 1 / 2 / 6 / 5; 
+  }
+  #bold {
+    font-weight: bold;
+  }
+  #login {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+
+@media (max-width:1000px) {.inner_header {width: 850px;}}
+@media (max-width:850px) {.inner_header {width: 750px;}}
+@media (max-width:750px) {.inner_header {width: 600px;}}
+@media (max-width:600px) {.inner_header {width: 400px;} }
+
+@media (max-width:1000px) {.slideshow-container {width: 850px;}}
+@media (max-width:850px) {.slideshow-container {width: 750px;}}
+@media (max-width:750px) {.slideshow-container {width: 600px; top: -100px; margin-bottom: -100px;}}
+@media (max-width:600px) {.slideshow-container {width: 400px; top: -100px; margin-bottom: -100px;}}
+
+@media (max-width:750px) {.prev { top: 200px;}}
+@media (max-width:750px) {.next { top: 200px;}}
+
+@media (max-width:600px) {.prev { top: 170px;}}
+@media (max-width:600px) {.next { top: 170px;}}
+
+@media (min-width:1000px) { body {font-size: 100%;} }
+@media (min-width:850px) { body {font-size:85%;} }
+@media (min-width:750px) { body {font-size:75%;} }
+@media (min-width:600px) { body {font-size:60%;} }
